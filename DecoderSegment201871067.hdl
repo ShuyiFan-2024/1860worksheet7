@@ -8,45 +8,45 @@ CHIP DecoderSegment201871067{
     Not(in=C,out=notC);
     Not(in=D,out=notD);
 
-    And(a=nota,b=notb,out=put1);
-    And(a=notc,b=put1,out=put2);
-    And(a=notd,b=put2,out=secret1);
+    And(a=notA,b=notB,out=put1);
+    And(a=notC,b=put1,out=put2);
+    And(a=notD,b=put2,out=secret1);
 
-    And(a=nota,b=notb,out=put3);
-    And(a=c,b=put3,out=put4);
-    And(a=notd,b=put4,out=secret2);
+    And(a=notA,b=notB,out=put3);
+    And(a=C,b=put3,out=put4);
+    And(a=notD,b=put4,out=secret2);
 
-    And(a=nota,b=notb,out=put5);
-    And(a=c,b=put5,out=put6);
-    And(a=notd,b=d,out=secret3);
+    And(a=notA,b=notB,out=put5);
+    And(a=C,b=put5,out=put6);
+    And(a=notD,b=D,out=secret3);
 
-    And(a=nota,b=b,out=put7);
-    And(a=notc,b=put7,out=put8);
-    And(a=d,b=put8,out=secret4);
+    And(a=notA,b=B,out=put7);
+    And(a=notC,b=put7,out=put8);
+    And(a=D,b=put8,out=secret4);
 
-    And(a=nota,b=b,out=put9);
-    And(a=c,b=put9,out=put10);
-    And(a=notd,b=put10,out=secret5);
+    And(a=notA,b=B,out=put9);
+    And(a=C,b=put9,out=put10);
+    And(a=notD,b=put10,out=secret5);
 
-    And(a=a,b=notb,out=put11);
-    And(a=notc,b=put11,out=put12);
-    And(a=notd,b=put12,out=secret6);
+    And(a=A,b=notB,out=put11);
+    And(a=notC,b=put11,out=put12);
+    And(a=notD,b=put12,out=secret6);
 
-    And(a=a,b=notb,out=put13);
-    And(a=c,b=put13,out=put14);
-    And(a=d,b=put14,out=secret7);
+    And(a=A,b=notB,out=put13);
+    And(a=C,b=put13,out=put14);
+    And(a=D,b=put14,out=secret7);
 
-    And(a=a,b=b,out=put15);
-    And(a=notc,b=put15,out=put16);
-    And(a=notd,b=put16,out=secret8);
+    And(a=A,b=B,out=put15);
+    And(a=notC,b=put15,out=put16);
+    And(a=notD,b=put16,out=secret8);
 
-    And(a=a,b=b,out=put17);
-    And(a=notc,b=put17,out=put18);
-    And(a=d,b=put18,out=secret9);
+    And(a=A,b=B,out=put17);
+    And(a=notC,b=put17,out=put18);
+    And(a=D,b=put18,out=secret9);
 
-    And(a=a,b=b,out=put19);
-    And(a=c,b=put19,out=put20);
-    And(a=notd,b=put20,out=secret10);
+    And(a=A,b=B,out=put19);
+    And(a=C,b=put19,out=put20);
+    And(a=notD,b=put20,out=secret10);
 
     Or(a=secret1,b=secret2,out=final1);
     Or(a=secret3,b=secret4,out=final2)；
