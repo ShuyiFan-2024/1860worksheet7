@@ -32,30 +32,40 @@ CHIP DecoderSegment201871067{
     And(a=notC,b=put11,out=put12);
     And(a=notD,b=put12,out=secret6);
 
+    And(a=A,b=notB,out=lily1);
+    And(a=notC,b=lily1,out=lily2);
+    And(a=d,b=lily2,out=secret7)
+    
     And(a=A,b=notB,out=put13);
     And(a=C,b=put13,out=put14);
-    And(a=D,b=put14,out=secret7);
+    And(a=D,b=put14,out=secret8);
 
     And(a=A,b=B,out=put15);
     And(a=notC,b=put15,out=put16);
-    And(a=notD,b=put16,out=secret8);
+    And(a=notD,b=put16,out=secret9);
 
     And(a=A,b=B,out=put17);
     And(a=notC,b=put17,out=put18);
-    And(a=D,b=put18,out=secret9);
+    And(a=D,b=put18,out=secret10);
 
     And(a=A,b=B,out=put19);
     And(a=C,b=put19,out=put20);
-    And(a=notD,b=put20,out=secret10);
+    And(a=notD,b=put20,out=secret11);
 
     Or(a=secret1,b=secret2,out=final1);
-    Or(a=secret3,b=secret4,out=final2);
-    Or(a=secret5,b=secret6,out=final3);
-    Or(a=secret7,b=secret8,out=final4);
-    Or(a=secret9,b=secret10,out=final5);
+    Or(a=secret3,b=final1,out=final2);
+    Or(a=secret4,b=final2,out=final3);
+    Or(a=secret5,b=final3,out=final4);
+    Or(a=secret6,b=final4,out=final5);
+    Or(a=secret7,b=final5,out=final6);
+    Or(a=secret8,b=final6,out=final7);
+    Or(a=secret9,b=final7,out=final8);
+    Or(a=secret10,b=final8,out=final9);
+    Or(a=secret11,b=final9,out=final10);
 
     Or(a=final1,b=final2,out=stem1);
-    Or(a=final3,b=stem1,out=stem2);
-    Or(a=final4,b=stem2,out=stem3);
-    Or(a=final5,b=stem3,out=a);
+    Or(a=final3,b=final4,out=stem2);
+    Or(a=final5,b=final6,out=stem3);
+    Or(a=final7,b=final8,out=stem4);
+    Or(a=final9,b=final10,out=a);
 }
