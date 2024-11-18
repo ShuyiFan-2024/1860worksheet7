@@ -34,7 +34,7 @@ CHIP DecoderSegment201871067{
 
     And(a=A,b=notB,out=lily1);
     And(a=notC,b=lily1,out=lily2);
-    And(a=d,b=lily2,out=secret7);
+    And(a=d,b=lily2,out=secret7); 
     
     And(a=A,b=notB,out=put13);
     And(a=C,b=put13,out=put14);
