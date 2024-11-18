@@ -49,10 +49,10 @@ CHIP DecoderSegment201871067{
     And(a=notD,b=put20,out=secret10);
 
     Or(a=secret1,b=secret2,out=final1);
-    Or(a=secret3,b=secret4,out=final2)；
-    Or(a=secret5,b=secret6,out=final3)；
-    Or(a=secret7,b=secret8,out=final4)；
-    Or(a=secret9,b=secret10,out=final5)；
+    Or(a=secret3,b=secret4,out=final2);
+    Or(a=secret5,b=secret6,out=final3);
+    Or(a=secret7,b=secret8,out=final4);
+    Or(a=secret9,b=secret10,out=final5);
 
     Or(a=final1,b=final2,out=stem1);
     Or(a=final3,b=stem1,out=stem2);
