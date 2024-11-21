@@ -70,60 +70,6 @@ CHIP Decoder201871067{
         Or(a=stem3,b=stem4,out=a);
 
 
-        
-        And(a=notA,b=notB,out=apple1);      
-        And(a=notC,b=apple1,out=apple2);
-        And(a=notD,b=apple2,out=orrange1);
-
-        And(a=notA,b=notB,out=apple3);      
-        And(a=C,b=apple3,out=apple4);
-        And(a=notD,b=apple4,out=orrange2);
-
-        And(a=notA,b=B,out=apple5);         
-        And(a=C,b=apple5,out=apple6);
-        And(a=notD,b=apple6,out=orrange3);
-
-        And(a=A,b=notB,out=apple7);         
-        And(a=notC,b=apple7,out=apple8);
-        And(a=notD,b=apple8,out=orrange4);
-
-        And(a=A,b=notB,out=apple9);        
-        And(a=C,b=apple9,out=apple10);
-        And(a=notD,b=apple10,out=orrange5); 
-
-        And(a=A,b=notB,out=apple11);        
-        And(a=C,b=apple11,out=apple12);
-        And(a=D,b=apple12,out=orrange6);
-
-        And(a=A,b=B,out=apple13);           
-        And(a=notC,b=apple13,out=apple14);
-        And(a=notD,b=apple14,out=orrange7);
-
-        And(a=A,b=B,out=apple15);           
-        And(a=notC,b=apple15,out=apple16);
-        And(a=D,b=apple16,out=orrange8);
-
-        And(a=A,b=B,out=apple17);           
-        And(a=C,b=apple17,out=apple18);
-        And(a=notD,b=apple18,out=orrange9);
-
-        And(a=A,b=B,out=apple19);           
-        And(a=C,b=apple19,out=apple20);
-        And(a=D,b=apple20,out=orrange10);
-
-        Or(a=orrange1,b=orrange2,out=juice1);
-        Or(a=orrange3,b=orrange4,out=juice2);
-        Or(a=orrange5,b=orrange6,out=juice3);
-        Or(a=orrange7,b=orrange8,out=juice4);
-        Or(a=orrange9,b=orrange10,out=juice5);
-    
-        Or(a=juice1,b=juice2,out=burry1);
-        Or(a=juice3,b=juice4,out=burry2);
-        Or(a=juice5,b=burry2,out=burry3);
-        Or(a=burry1,b=burry2,out=blue1);
-        Or(a=burry3,b=blue1,out=c);
-
-
 
         And(a=notA, b=notB, out=andb1);     
         And(a=notC, b=andb1, out=andb2);
@@ -184,6 +130,59 @@ CHIP Decoder201871067{
         Or(a=orb5, b=orb6, out=ororb3);
         Or(a=ororb1, b=ororb2, out=orororb1);
         Or(a=orororb1, b=ororb3, out=b);
+
+
+        And(a=notA,b=notB,out=apple1);      
+        And(a=notC,b=apple1,out=apple2);
+        And(a=notD,b=apple2,out=orrange1);
+
+        And(a=notA,b=notB,out=apple3);      
+        And(a=C,b=apple3,out=apple4);
+        And(a=notD,b=apple4,out=orrange2);
+
+        And(a=notA,b=B,out=apple5);         
+        And(a=C,b=apple5,out=apple6);
+        And(a=notD,b=apple6,out=orrange3);
+
+        And(a=A,b=notB,out=apple7);         
+        And(a=notC,b=apple7,out=apple8);
+        And(a=notD,b=apple8,out=orrange4);
+
+        And(a=A,b=notB,out=apple9);        
+        And(a=C,b=apple9,out=apple10);
+        And(a=notD,b=apple10,out=orrange5); 
+
+        And(a=A,b=notB,out=apple11);        
+        And(a=C,b=apple11,out=apple12);
+        And(a=D,b=apple12,out=orrange6);
+
+        And(a=A,b=B,out=apple13);           
+        And(a=notC,b=apple13,out=apple14);
+        And(a=notD,b=apple14,out=orrange7);
+
+        And(a=A,b=B,out=apple15);           
+        And(a=notC,b=apple15,out=apple16);
+        And(a=D,b=apple16,out=orrange8);
+
+        And(a=A,b=B,out=apple17);           
+        And(a=C,b=apple17,out=apple18);
+        And(a=notD,b=apple18,out=orrange9);
+
+        And(a=A,b=B,out=apple19);           
+        And(a=C,b=apple19,out=apple20);
+        And(a=D,b=apple20,out=orrange10);
+
+        Or(a=orrange1,b=orrange2,out=juice1);
+        Or(a=orrange3,b=orrange4,out=juice2);
+        Or(a=orrange5,b=orrange6,out=juice3);
+        Or(a=orrange7,b=orrange8,out=juice4);
+        Or(a=orrange9,b=orrange10,out=juice5);
+    
+        Or(a=juice1,b=juice2,out=burry1);
+        Or(a=juice3,b=juice4,out=burry2);
+        Or(a=juice5,b=burry2,out=burry3);
+        Or(a=burry1,b=burry2,out=blue1);
+        Or(a=burry3,b=blue1,out=c);
 
 
 
